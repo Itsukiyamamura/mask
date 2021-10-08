@@ -1,0 +1,174 @@
+/***** BASE RULE *****/
+
+*{
+  margin: 0;
+  padding: 0;
+  line-height: 100%;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+   font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, Meiryo, sans-serif;
+}
+
+a {
+   color: black;
+}
+
+a:hover {
+   color: #4080ff;
+}
+
+/***** LAYOUT *****/
+
+#container{
+  position:relative;
+  width: 75%;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+header {
+  position: relative;
+  z-index: 999;
+  height: 16vw;
+  background: #01b27b;
+  box-shadow: 0 4px 0.3125rem rgba(0,0,0,.3);
+}
+
+header h1{
+  position: absolute;
+  left: 3rem;
+  top: 3rem;
+  color: white;
+  }
+
+header img{
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom:0;
+}
+
+#main{
+  display: flex;
+  flex-direction: row;
+}
+
+section{
+  flex: 3;
+  padding:3rem;
+  padding-bottom: 20rem;
+  text-align: center;
+  background: #F8F8F8;
+}
+
+article {
+  margin-bottom: 3rem;
+}
+
+article h1{
+  margin-bottom: 1rem;
+}
+
+article p{
+  width:100%;
+
+}
+
+article iframe{
+  display: block;
+  width:100%;
+  height: 400px;
+}
+
+article img{
+  width: 100%;
+}
+
+/***** button *****/
+  .btn-circle-border-simple {
+    display: inline-block;
+    text-decoration: none;
+    color: #579df4;
+    width: 80px;
+    height: 80px;
+    margin:5px;
+    line-height: 80px;
+    border-radius: 50%;
+    border: solid 3px #579df4;
+    text-align: center;
+    overflow: hidden;
+    font-weight: bold;
+    transition: .4s;
+  }
+
+  .btn-circle-border-simple:hover {
+    background: #b3e1ff;
+  }
+
+footer {
+  padding: 2rem 3rem;
+  text-align: center;
+  background: #01b27b;
+  color: white;
+}
+
+/********* SMART PHONE *********/
+
+@media only screen and (max-width: 640px) {
+
+    #container{
+      width: 100%;
+    }
+
+    header{
+      height: 9rem;
+      margin-bottom: 0;
+    }
+
+    #logo{
+      width: 4rem;
+      top: 6rem;
+      left:50%;
+      margin-left: -2rem;
+    }
+
+    header h1{
+      width: 100%;
+      top: 2.5rem;
+      left: 0rem;
+      text-align: center;
+    }
+
+    #SiteNavigator {
+      padding: 0;
+    }
+
+    #SiteNavigator ul#lists{
+      flex-direction: column;
+      margin-left: 0;
+    }
+
+    #SiteNavigator ul li{
+      width: 100%;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid gray;
+      text-align: center;
+    }
+
+    #main{
+      flex-direction: column;
+    }
+
+    section{
+      background: #FFF;
+    }
+
+    article iframe{
+      height:240px;
+    }
+
+}
