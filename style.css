@@ -33,15 +33,14 @@ header {
   position: relative;
   z-index: 999;
   height: 16vw;
-  background: #01b27b;
-  box-shadow: 0 4px 0.3125rem rgba(0,0,0,.3);
+  background: #00000;
 }
 
 header h1{
   position: absolute;
   left: 3rem;
   top: 3rem;
-  color: white;
+  color: black;
   }
 
 header img{
@@ -111,8 +110,8 @@ article img{
 footer {
   padding: 2rem 3rem;
   text-align: center;
-  background: #01b27b;
-  color: white;
+  background: #00000;
+  color: black;
 }
 
 /********* SMART PHONE *********/
