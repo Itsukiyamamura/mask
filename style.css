@@ -16,10 +16,6 @@ a {
    color: black;
 }
 
-a:hover {
-   color: #4080ff;
-}
-
 /***** LAYOUT *****/
 
 #container{
@@ -43,24 +39,21 @@ header h1{
   color: black;
   }
 
-header img{
-  position: absolute;
-  width: 100%;
-  left: 0;
-  bottom:0;
-}
-
 #main{
   display: flex;
   flex-direction: row;
 }
 
-section{
-  flex: 3;
-  padding:3rem;
-  padding-bottom: 20rem;
+.class1 {
+  text-align: left;
+}
+ 
+.class2 {
   text-align: center;
-  background: #F8F8F8;
+}
+ 
+.class3 {
+  text-align: right;
 }
 
 article {
@@ -85,27 +78,6 @@ article iframe{
 article img{
   width: 100%;
 }
-
-/***** button *****/
-  .btn-circle-border-simple {
-    display: inline-block;
-    text-decoration: none;
-    color: #579df4;
-    width: 80px;
-    height: 80px;
-    margin:5px;
-    line-height: 80px;
-    border-radius: 50%;
-    border: solid 3px #579df4;
-    text-align: center;
-    overflow: hidden;
-    font-weight: bold;
-    transition: .4s;
-  }
-
-  .btn-circle-border-simple:hover {
-    background: #b3e1ff;
-  }
 
 footer {
   padding: 2rem 3rem;
