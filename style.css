@@ -50,16 +50,13 @@ a {
   left: 0;
   z-index: 100;
   width: 100%;
-  background-color: #fff;
-  -webkit-box-shadow: 0 3px 3px -3px rgba(0, 0, 0, .2);
-  -moz-box-shadow: 0 3px 3px -3px rgba(0, 0, 0, .2);
-  box-shadow: 0 3px 3px -3px rgba(0, 0, 0, .2);
+  background-color: #transparent;
 }
 
 .gnav-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-end;
 }
 
 .gnav-item {
@@ -72,7 +69,7 @@ a {
 .gnav-link {
   position: relative;
   display: inline-block;
-  padding: 20px 0;
+  padding: 55px 0;
   -webkit-transition: .3s;
   transition: .3s;
   color: #333;
@@ -110,16 +107,34 @@ a {
   flex-direction: row;
 }
 
-.class1 {
-  text-align: left;
+.flex-box {
+    background-color: #eee;     /* 背景色指定 */
+    padding:  10px;             /* 余白指定 */
+	display: flex;
+	flex-wrap: wrap;
 }
  
-.class2 {
-  text-align: center;
+.flex-item {
+    padding: 10px;
+    color:  #fff;               /* 文字色 */
+    margin:  10px;              /* 外側の余白 */
+    border-radius:  5px;        /* 角丸指定 */
 }
  
-.class3 {
-  text-align: right;
+.flex-item:nth-child(1) {
+    background-color:  #2196F3; /* 背景色指定 */
+}
+ 
+.flex-item:nth-child(2) {
+    background-color:  #4CAF50; /* 背景色指定 */
+}
+ 
+.flex-item:nth-child(3) {
+    background-color: #3F51B5; /* 背景色指定 */
+}
+ 
+.flex-item:nth-child(4) {
+    background-color:  #00BCD4; /* 背景色指定 */
 }
 
 article {
