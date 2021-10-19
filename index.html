@@ -6,21 +6,41 @@
         <meta name="viewport" content="width=device-width">
         <script src="jquery-3.2.1.min.js"></script>
         <script src="script.js"></script>
-        <link href="style.css" rel="stylesheet" >
-        <title>MASK Page</title>
+    <link href="style.css" rel="stylesheet" >
+        <title>Mask Page</title>
     </head>
 
     <body>
+		
+　　 <!-- .gnav -->
+    <nav class="gnav" class="fixed">
+      <ul class="gnav-list">
+        <li class="gnav-item"><a class="gnav-link" href="#works-section">WORKS</a></li>
+        <li class="gnav-item"><a class="gnav-link" href="#feature-section">FEATURE</a></li>
+        <li class="gnav-item"><a class="gnav-link" href="#about-section">ABOUT</a></li>
+        <li class="gnav-item"><a class="gnav-link" href="#skill-section">SKILL</a></li>
+        <li class="gnav-item"><a class="gnav-link" href="#contact-section">CONTACT</a></li>
+      </ul>
+    </nav>
+    <!-- /.gnav -->
 
-      <div id="container">
+    <!-- .header -->
+    <header class="header">
+      <h1 class="logo">
+        <div class="logo-title">MASK</div>
+      </h1>
+    </header>
+    <!-- /.header -->
+		
+		 <main class="content">
 
-        <header>
-          <h1>MASK</h1>
-        </header>
-
-		<div class="class1">
-  　　　　　　<img src="img/mask_gr1.jpg">
-　　　　　</div>
+          <div class="section-body works">
+            <div class="works-list js-my-gallery">
+              <figure class="works-item">
+                <a href="img/works/company.jpg" data-size="960x720" class="works-image-wrapper works-link hover-action">
+                  <img class="works-image lazyload fadein" src="img/placeholder4x3.png" data-src="img/works/company.jpg"
+                    alt="" />
+                </a>
 			
          <div class="class2">
            <img src="img/mask_gr2.jpg">
@@ -38,6 +58,6 @@
 
       </div>
 
-    </body>
+</body>
 
 </html>
