@@ -111,6 +111,7 @@ a {
     background-color: #eee;     /* 背景色指定 */
     padding:  10px;             /* 余白指定 */
 	display: flex;
+	justify-content: center;
 	flex-wrap: wrap;
 }
  
@@ -120,9 +121,9 @@ a {
     margin:  10px;              /* 外側の余白 */
     border-radius:  5px;        /* 角丸指定 */
 }
- 
-.flex-item {
-    background-color:  #fff; /* 背景色指定 */
+
+img {
+	width: 80%;
 }
 
 article {
