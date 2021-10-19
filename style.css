@@ -121,20 +121,8 @@ a {
     border-radius:  5px;        /* 角丸指定 */
 }
  
-.flex-item:nth-child(1) {
-    background-color:  #2196F3; /* 背景色指定 */
-}
- 
-.flex-item:nth-child(2) {
-    background-color:  #4CAF50; /* 背景色指定 */
-}
- 
-.flex-item:nth-child(3) {
-    background-color: #3F51B5; /* 背景色指定 */
-}
- 
-.flex-item:nth-child(4) {
-    background-color:  #00BCD4; /* 背景色指定 */
+.flex-item {
+    background-color:  #fff; /* 背景色指定 */
 }
 
 article {
