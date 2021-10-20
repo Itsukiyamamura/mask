@@ -29,7 +29,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 46vh;
+  height: 25vh;
 }
 
 .logo-title {
@@ -108,10 +108,10 @@ a {
 }
 
 .flex-box {
-    background-color: #eee;     /* 背景色指定 */
+    background-color: #fff;     /* 背景色指定 */
     padding:  10px;             /* 余白指定 */
 	display: flex;
-	justify-content: center;
+	justify-content: space-around;
 	flex-wrap: wrap;
 }
  
