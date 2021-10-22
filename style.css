@@ -79,6 +79,7 @@ a {
 
 .gnav-link:hover {
   opacity: 1;
+  color: #E1E1E1;
 }
 
 .gnav-link:after {
@@ -87,7 +88,7 @@ a {
   left: 50%;
   width: 0;
   height: 3px;
-  content: "";
+
   transition: .3s;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
