@@ -28,17 +28,22 @@ $( function(){
 
 });
 
-let mask = document.querySelector(".mask");
-barba.init({
-	transitions: [{
-		async leave() {
-			mask.classList.add('is-close');
-			await new Promise((resolve) => {
-				return setTimeout(resolve, 1000);
-			});
-		},
-		afterEnter() {
-			mask.classList.remove('is-close');
-		}
-	}]
+  // ページ移動時フェードイン、フェードアウト
+  $(window).on('load', function(){
+    $('body').removeClass('fadeout');
+});
+
+ $(function() {
+   // ハッシュリンク(#)と別ウィンドウでページを開く場合はスルー
+   $('a:not([href^="#"]):not([target])').on('click', function(e){
+     e.preventDefault(); // ナビゲートをキャンセル
+     url = $(this).attr('href'); // 遷移先のURLを取得
+     if (url !== '') {
+       $('body').addClass('fadeout');  // bodyに class="fadeout"を挿入
+       setTimeout(function(){
+         window.location = url;  // 0.8秒後に取得したURLに遷移
+       }, 800);
+     }
+     return false;
+  });
 });

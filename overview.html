@@ -8,9 +8,6 @@
   <script src="jquery-3.2.1.min.js"></script>
   <script src="script.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" crossorigin="anonymous"></script>
-  <!-- jsdelivr -->
-  <script src="https://cdn.jsdelivr.net/npm/@barba/core"></script>
-  <script>barba.init();</script>
   <link href="style.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,9 +15,8 @@
   <title>Mask Page</title>
 </head>
 
-<body>
-
-    <div data-barba="wrapper">
+<!-- .fadeoutがあるときはフェードアウト -->
+<body class="fadeout">
 
   <!-- .header -->
   <header class="header">
@@ -43,10 +39,6 @@
   </nav>
   <!-- /.gnav -->
 
-    </div>
-
-       <div data-barba="container" data-barba-namespace="sample-page">
-
   <main class="content">
 
     <div class="text-overvie">
@@ -62,13 +54,11 @@
         <br>
     </div>
   </main>
-      </div>
 
     <footer>
       Copyright ©︎ MASK All Rights Reserved.
     </footer>
 
-<div class="mask"></div>
 </body>
 
 </html>
