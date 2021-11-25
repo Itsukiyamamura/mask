@@ -195,7 +195,8 @@ footer {
 }
 
 /********* SMART PHONE *********/
-@media only screen and (max-width: 740px) {
+@media only screen and (max-width: 760px) {
+
   .content {
     width: 100%;
   }
