@@ -45,7 +45,7 @@ a {
 .header {
   position: relative;
   height: 4rem;
-  margin-bottom: 4rem;
+  margin-bottom: 7rem;
 }
 
 .logo {
@@ -69,8 +69,8 @@ a {
 ---------------------------------*/
 .gnav {
   position: fixed;
-  top: 0;
-  right: 1.3rem;
+  top: 3.5rem;
+  right: 2.5rem;
   background-color: #transparent;
   z-index: 1
 }
@@ -88,41 +88,12 @@ a {
   letter-spacing: .05em;
 }
 
-.gnav-link {
-  position: relative;
-  display: inline-block;
-  padding: 55px 0;
-  -webkit-transition: .3s;
-  transition: .3s;
-  color: #333;
-}
-
-.gnav-link:hover {
+.gnav-item a:hover {
   opacity: 1;
   color: #E1E1E1;
-}
-
-.gnav-link:after {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  width: 0;
-  height: 3px;
   transition: .3s;
-  -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
-  background-color: #333;
 }
 
-.gnav-link:hover:after {
-  width: 100%;
-}
-
-/* iOS対策 */
-.ios .gnav-link:after,
-.ios .gnav-link:hover:after {
-  display: none;
-}
 
 .content {
   position: relative;
@@ -136,15 +107,14 @@ a {
   width: 100%;
   margin: auto;
   background-color: #fff;
-  padding: 10px;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
 }
 
 .flex-item {
-  width: 18%;
-  margin-bottom: 2rem;
+  width: 17%;
+  margin-bottom: 1.9rem;
   color: #fff;
   border-radius: 5px;
   transition: .4s ease-in-out;
@@ -202,7 +172,7 @@ footer {
   }
 
   .header {
-    height: 14rem;
+    height: 12rem;
     margin-bottom: 0;
   }
 
