@@ -178,6 +178,7 @@ footer {
 
   .content {
     width: 100%;
+    top: 3rem;
   }
 
   .header {
@@ -187,11 +188,13 @@ footer {
 
   .logo {
     left: 3.4rem;
+    top: 5rem;
     font-size: 30px;
   }
 
   .gnav {
     right: 2.5rem;
+    top: 5rem;
   }
 
   .gnav-item {
