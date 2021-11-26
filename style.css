@@ -45,12 +45,12 @@ a {
 .header {
   position: relative;
   height: 4rem;
-  margin-bottom: 7rem;
+  margin-bottom: 8rem;
 }
 
 .logo {
   position: fixed;
-  left: 4.3rem;
+  left: 6.8rem;
   top: 3rem;
   color: #000;
   font-family: "Open sans", sans-serif;
@@ -70,7 +70,7 @@ a {
 .gnav {
   position: fixed;
   top: 3.5rem;
-  right: 2.5rem;
+  right: 5rem;
   background-color: #transparent;
   z-index: 1
 }
@@ -124,6 +124,14 @@ a {
   opacity: .7;
 }
 
+.expansion-imag{
+  width: 70%;
+}
+
+.center{
+  text-align : center;
+}
+
 /* overviewのテキスト */
 .text-overvie {
   text-align: center;
@@ -158,8 +166,9 @@ img {
 }
 
 footer {
-  padding: 4rem 3rem 5rem;
+  padding: 8rem 3rem 3rem;
   text-align: center;
+  font-size: 12px;
   background: #00000;
   color: black;
 }
@@ -177,6 +186,7 @@ footer {
   }
 
   .logo {
+    left: 2rem;
     font-size: 30px;
   }
 
@@ -195,6 +205,10 @@ footer {
 
   .flex-item {
     width: 28%;
+  }
+
+  .expansion-imag{
+    width: 60%;
   }
 
   .text-overvie p {
