@@ -125,7 +125,7 @@ a {
 }
 
 .expansion-imag{
-  width: 70%;
+  width: 80%;
 }
 
 .center{
@@ -186,12 +186,12 @@ footer {
   }
 
   .logo {
-    left: 2rem;
+    left: 3.4rem;
     font-size: 30px;
   }
 
   .gnav {
-    right: 1rem;
+    right: 2.5rem;
   }
 
   .gnav-item {
@@ -199,8 +199,8 @@ footer {
     padding: 0 12px;
   }
 
-  .gnav-link {
-    padding: 55px 0;
+  .flex-box {
+    width: 90%;
   }
 
   .flex-item {
