@@ -43,15 +43,19 @@ a {
 
 /***** LAYOUT *****/
 .header {
-  position: relative;
-  height: 4rem;
-  margin-bottom: 8rem;
+  height: 190px;
+}
+
+.l-header {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
 }
 
 .logo {
   position: fixed;
-  left: 6.8rem;
-  top: 3rem;
+  left: 109px;
+  top: 48px;
   color: #000;
   font-family: "Open sans", sans-serif;
   font-size: 30px;
@@ -69,8 +73,8 @@ a {
 ---------------------------------*/
 .gnav {
   position: fixed;
-  top: 3.5rem;
-  right: 5rem;
+  top: 56px;
+  right: 80px;
   background-color: #transparent;
   z-index: 1
 }
@@ -93,7 +97,6 @@ a {
   color: #E1E1E1;
   transition: .3s;
 }
-
 
 .content {
   position: relative;
@@ -124,12 +127,12 @@ a {
   opacity: .7;
 }
 
-.expansion-imag{
+.expansion-imag {
   width: 70%;
 }
 
-.center{
-  text-align : center;
+.center {
+  text-align: center;
 }
 
 /* overviewのテキスト */
@@ -142,7 +145,6 @@ a {
   font-family: 'Noto Serif JP', serif;
   padding: 2em 0;
   margin: 0;
-  opacity: 0;
   animation-name: fadein-bottom;
   animation-duration: 1.5s;
   animation-timing-function: ease-out;
@@ -225,17 +227,92 @@ img {
   width: 100%;
 }
 
-footer {
-  padding: 8rem 3rem 3rem;
-  text-align: center;
+.footer {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  margin-top: 80px;
   font-size: 12px;
-  background: #00000;
-  color: black;
+  z-index: 2;
+}
+
+.footer-inner {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+.copyright {
+  margin-right: 15px;
+}
+
+.socialdesign_icon {
+  width: 13.5px;
+  height: 15px;
+  margin-right: 10px;
+  transform: scale(1);
+  transition: .3s ease-in-out;
+}
+
+.socialdesign_icon:hover {
+  transform: scale(1.2);
+}
+
+.instagram_icon {
+  width: 15px;
+  height: 15px;
+  transform: scale(1);
+  transition: .3s ease-in-out;
+}
+
+.instagram_icon:hover {
+  transform: scale(1.2);
+}
+
+@media only screen and (max-width: 1160px) {
+  .logo {
+    left: 70px;
+  }
+
+  .gnav {
+    right: 50px;
+  }
+}
+
+@media only screen and (max-width: 1040px) {
+  .logo {
+    left: 65px;
+  }
+
+  .gnav {
+    right: 40px;
+  }
+}
+
+@media only screen and (max-width: 920px) {
+  .logo {
+    left: 60px;
+  }
+
+  .gnav {
+    right: 35px;
+  }
+}
+
+@media only screen and (max-width: 840px) {
+  .logo {
+    left: 50px;
+  }
+
+  .gnav {
+    right: 30px;
+  }
 }
 
 /********* SMART PHONE *********/
 @media only screen and (max-width: 760px) {
-
   .content {
     width: 100%;
     top: 3rem;
@@ -270,7 +347,7 @@ footer {
     width: 28%;
   }
 
-  .expansion-imag{
+  .expansion-imag {
     width: 80%;
   }
 
